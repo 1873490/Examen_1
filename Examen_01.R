@@ -26,8 +26,8 @@ sd(Historico$Superficie)
 
 #Realiza una grafica histograma (2,1) con las variables: numero de incendios y superficie en hectareas quemadas 
 par(mfrow=c(1,2))
-hist(Historico$Numero.de.incendios, xlab = "Numero de incendios", ylab= "Frecuencia", main = "numero de incendios", col="red")
-hist(Historico$Superficie, xlab = "Hectareas quemadas", ylab= "Frecuencia",main = "superficie hectareas quemadas", col = "blue" )
+boxplot(Historico$Numero.de.incendios, ylab= "Numero de incendios", main = "numero de incendios", col="red")
+boxplot(Historico$Superficie, ylab= "Superficie de hectareas quemadas",main = "superficie hectareas quemadas", col = "blue" )
 par(mfrow=c(1,1))
 
 #¿mediante la funcion bloxplot para el numero de incendios, revise si existen outlires
